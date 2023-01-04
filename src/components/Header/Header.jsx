@@ -13,6 +13,7 @@ import { DateRange } from "react-date-range";
 import { useState } from "react";
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
+import {format} from "date-fns"
 const Header = () => {
 
   const [date,setDate] = useState([
@@ -22,7 +23,13 @@ const Header = () => {
       key:'selection'
     }
   ]);
-
+  const [openDate,setOpenDate] = useState(false);
+  const [openOptions,setOpenOptions] = useState(false);
+  const [options,setOptions] = useState({
+    adult:1,
+    children:0,
+    room:1,
+  });
   return (
     <div className="header">
       <div className="headerContainer">
@@ -62,18 +69,21 @@ const Header = () => {
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
-             <span className="headerSearchText">date to date</span>
-             <DateRange
+             <span onClick={()=>setOpenDate(!openDate)} className="headerSearchText">{`${format(date[0].startDate,"MM/dd/yyyy")} to ${format(date[0].endDate,"MM/dd/yyyy")}`}</span>
+{    openDate &&         <DateRange
              editableDateInputs={true}
              moveRangeOnFirstSelection={false}
              onChange={item => setDate([item.selection])}
              ranges={date}
              className='date'
-              />
+              />}
           </div>
           <div className="headerSearchItem">
             <FontAwesomeIcon icon={faPerson} className="headerIcon" />
-            <span className="headerSearchText">2 Adults 2 Children 1 room</span>
+            <span className="headerSearchText">{`${options.adult} adult . ${options.children} children . ${options.room} rooms`}</span>
+        <div className="options">
+          
+        </div>
           </div>
           <div className="headerSearchItem">
       <button className="headerBtn">Search</button>
