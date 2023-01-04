@@ -73,5 +73,15 @@ max-width: 1024px;
     gap: 10px;
 }
 .headerSearchInput{
+    border: none;
+    outline: none;
+
+}
+.headerSearchText{
+    color: lightgray;
+
+}
+.date{
+    position: absolute;
     
 }
