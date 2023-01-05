@@ -85,3 +85,16 @@ max-width: 1024px;
     position: absolute;
     top:50px;
 }
+
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    color:gray;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+}
