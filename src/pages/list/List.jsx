@@ -17,7 +17,7 @@ const List = () => {
     </div>
     <div className="lsItem">
       <label>Check-in Date</label>
-
+          
     </div>
           </div>
           <div className="listResult">
