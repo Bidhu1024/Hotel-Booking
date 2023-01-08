@@ -98,3 +98,26 @@ max-width: 1024px;
     -o-border-radius: 5px;
     
 }
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: black;
+    font-size: .8rem;
+
+}
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: #fff;
+}
