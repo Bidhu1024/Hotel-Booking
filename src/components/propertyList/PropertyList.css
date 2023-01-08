@@ -1,31 +1,28 @@
-.featured{
+.pList{
     width: 100%;
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    z-index: 1;
+    gap:20px;
 }
-
-.featuredItem{
-    position: relative;
-    color: #fff;
+.pListItem{
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     overflow: hidden;
-    height: 250px;
+    cursor: pointer;
 }
-.featuredImg{
+.pListImg{
     width: 100%;
+    height: 150px;
     object-fit: cover;
 }
-
-.featuredTitles{
-position: absolute;
-bottom: 20px;
-left: 20px;
-
+.pListTitles>h1{
+    font-size: 18px;
+}
+.pListTitles>h2{
+    font-size: 14px;
+    font-weight: 300;
 }
