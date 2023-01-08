@@ -5,6 +5,7 @@ import Header from './../../components/Header/Header';
 import Featured from './../../components/Featured/Featured';
 import PropertyList from '../../components/propertyList/PropertyList';
 import FeaturedProperties from './../../components/featuredProperties/FeaturedProperties';
+import MailList from '../../components/mailList/MailList';
 const Home = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ Browse Property by List
   Homes Guests Love
 </h1>
 <FeaturedProperties />
+<MailList/>
     </div>
     </div>
   )
