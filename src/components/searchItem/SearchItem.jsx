@@ -18,7 +18,9 @@ const SearchItem = () => {
         <span className="siCancelOpSubtitle">You can cancel later</span>
 
     </div>
-    <div className="siDetails"></div>
+    <div className="siDetails">
+        details
+    </div>
     </div>
   )
 }
