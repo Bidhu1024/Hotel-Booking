@@ -64,6 +64,7 @@ const Hotel = () => {
           </div>
         </div>
         <MailList />
+
       </div>
     </div>
   )
