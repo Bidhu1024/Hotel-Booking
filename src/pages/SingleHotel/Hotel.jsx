@@ -4,6 +4,7 @@ import Navbar from './../../components/Navbar/Navbar';
 import Header from './../../components/Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot} from "@fortawesome/free-solid-svg-icons";
+import MailList from './../../components/mailList/MailList';
 const Hotel = () => {
   const photos = [
     {
@@ -62,6 +63,7 @@ const Hotel = () => {
             </div>
           </div>
         </div>
+        <MailList />
       </div>
     </div>
   )
