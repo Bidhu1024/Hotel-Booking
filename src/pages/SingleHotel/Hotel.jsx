@@ -9,8 +9,8 @@ import { useState } from 'react';
 const Hotel = () => {
 
   const [slideNumber,setSlideNumber] = useState(0);
-
-
+  const [open, setOpen] = useState(false)
+const handleOpen = 
   const photos = [
     {
       src: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/261707778.jpg?k=56ba0babbcbbfeb3d3e911728831dcbc390ed2cb16c51d88159f82bf751d04c6&o=&hp=1",
@@ -36,6 +36,9 @@ const Hotel = () => {
       <Navbar />
       <Header type='list' />
       <div className="hotelContainer">
+   { open &&  <div className="slider">
+
+      </div>}
         <div className="hotelWrapper">
           <h1 className="hotelTitle">Crown Hotel</h1>
           <div className="hotelAddress">
@@ -45,9 +48,9 @@ const Hotel = () => {
           <span className="hotelDistance">Excellent Location</span>
           <span className="hotelPriceHighlight">Book a stay over $100 to get free breakfast</span>
           <div className="hotelImages">
-              {photos.map((photo)=>(
+              {photos.map((photo,i)=>(
                 <div className="hotelImgWrapper">
-                  <img src={photo.src} alt="" className='hotelImg' />
+                  <img src={photo.src} onClick={handleOpen} alt="" className='hotelImg' />
                 </div>
               ))}
           </div>
